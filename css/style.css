@@ -1,0 +1,459 @@
+/* -------------------------- General ----------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+#intro .text-title,
+#past-editions .text-title,
+footer .text-title {
+  height: 3.5rem;
+}
+
+/* ------------------------ Background ---------------------- */
+
+.background-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  mix-blend-mode: color-dodge;
+}
+
+.background-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  user-select: none;
+  opacity: 0.7;
+}
+
+#texture {
+  user-select: none;
+  opacity: 0.4;
+}
+
+/* ---------------------- Apply Button --------------------- */
+
+.apply {
+  position: fixed !important;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #4838D7;
+  color: #F1F0FC;
+  border: 4px solid #F1F0FC;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.apply:hover {
+  filter: hue-rotate(10deg);
+  transition: 0.2s;
+}
+
+/* -------------------------- Hero ------------------------- */
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #BD2D45;
+  /* width: 100vw; */
+  height: 100vh;
+  gap: 5rem;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding-top: 10rem;
+  gap: 1rem;
+}
+
+#summerInternship-logo {
+  width: 24rem;
+}
+
+#redlight-logo {
+  width: 12rem;
+}
+
+#hero h2 {
+  color: #420812;
+  font-size: 1.75rem;
+}
+
+/* ------------------------- Intro ------------------------ */
+
+#intro {
+  background-color: #E36E02;
+  height: fit-content;
+  padding: 10rem 10rem 4rem 10rem;
+}
+
+#intro * {
+  position: relative;
+  z-index: 1;
+}
+
+#intro p {
+  width: 70%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #4C2B04;
+  padding: 2rem 0;
+}
+
+.btn {
+  max-width: min-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn button,
+.btn a {
+  all: unset;
+  width: max-content;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn img {
+  max-width: 100%;
+}
+
+.find-out a {
+  color: #FFE4C3;
+}
+
+.how-it-goes {
+  padding-top: 2rem;
+}
+
+.how-it-goes h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #FFE4C3;
+  padding: 4rem 0;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.steps img {
+  width: 15rem;
+}
+
+.steps img:nth-child(1) {
+  padding-bottom: 15rem;
+}
+
+.steps img:nth-child(2) {
+  padding-bottom: 10rem;
+}
+
+/* -------------------- Past Editions -------------------- */
+
+#past-editions {
+  background-color: #4838D7;
+  height: fit-content;
+  position: relative;
+}
+
+#past-editions * {
+  z-index: 1;
+}
+
+#past-editions .text-title {
+  padding: 10rem 0rem 0 10rem;
+}
+
+/* Past editions - Photos */
+
+.gallery {
+  position: relative;
+  padding: 4rem 0;
+  /* z-index: 1; */
+}
+
+.gallery img {
+  width: 50rem;
+  height: 30rem;
+  object-fit: contain;
+}
+
+/* Past editions - Projects */
+
+#past-editions h2 {
+  color: #F1F0FC;
+  font-weight: 800;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+}
+
+.the-projects {
+  padding: 4rem 10rem;
+  position: relative;
+  justify-items: center;
+  /* z-index: 1; */
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 2rem;
+}
+
+.project>img {
+  width: 32rem;
+}
+
+.see-more button {
+  color: #F1F0FC;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+}
+
+/* Pop-up --> See more Project Info */
+
+.project-details {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 3 !important;
+  display: none;
+}
+
+.project-details-inner {
+  position: relative;
+}
+
+.project-details .project-details-inner {
+  background-color: #160F57;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  padding: 4rem;
+  border: 6px solid #F1F0FC;
+  border-radius: 6px;
+}
+
+.exit-btn {
+  width: fit-content;
+  all: unset;
+  position: absolute;
+  cursor: pointer;
+  top: 1rem;
+  right: 1rem;
+}
+
+.exit-btn img {
+  width: 3.5rem;
+}
+
+#project-logo {
+  width: 14rem;
+}
+
+.details-info {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.about-project,
+.other-info {
+  width: 50%;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.details-info h4 {
+  color: #FFAD49;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.details-info p {
+  color: #F1F0FC;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding-bottom: 0.5rem;
+}
+
+.details-info ul,
+.details-info li {
+  list-style: none;
+  color: #F1F0FC;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* Past editions - Testemonials */
+
+#past-editions .testemonials-container {
+  position: relative;
+  padding: 6rem 0;
+  margin: 0 10rem;
+  z-index: 0;
+}
+
+.swiper {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testemonial-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 0;
+}
+
+.testemonial-card img {
+  width: 200px;
+}
+
+.testemonial-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.5rem;
+  color: white;
+}
+
+.testemonial-card-info h3 {
+  color: #160F57;
+  font-size: 1.6rem;
+}
+
+.testemonial-card-info p {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow:hover {
+  filter: hue-rotate(-10deg);
+  transition: 0.2s;
+}
+
+.arrow img {
+  width: 3.5rem;
+}
+
+.swiper-button-prev-unique {
+  left: 0;
+}
+
+.swiper-button-next-unique {
+  right: 0;
+}
+
+/* ----------------------- Footer ----------------------- */
+
+footer {
+  background-color: #BD2D45;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  gap: 2rem;
+}
+
+footer * {
+  position: relative;
+  z-index: 1;
+}
+
+.apply-now {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0.25rem 0.5rem;
+  background-color: #4838D7;
+  color: #F1F0FC;
+  font-size: 1.5rem;
+  border: 4px solid #F1F0FC;
+  border-radius: 0.5rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.apply-now:hover {
+  filter: hue-rotate(10deg);
+  transition: 0.2s;
+}

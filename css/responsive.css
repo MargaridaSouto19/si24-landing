@@ -1,0 +1,324 @@
+/* ----------------------- width: 1170 ---------------------- */
+
+@media only screen and (max-width: 1170px) {
+  #intro {
+    padding: 8rem 8rem 4rem 8rem;
+  }
+
+  #past-editions .text-title {
+    padding: 8rem 0 0 8rem;
+  }
+
+  .the-projects {
+    padding: 4rem 8rem;
+  }
+
+  .project>img {
+    width: 26rem;
+  }
+
+  .project-info>img {
+    height: 2.5rem;
+  }
+
+  #past-editions .testemonials-container {
+    margin: 0 8rem;
+  }
+
+  footer {
+    padding: 8rem;
+  }
+}
+
+/* ----------------------- width: 920 ------------------------ */
+
+@media only screen and (max-width: 920px) {
+
+  #intro .text-title,
+  #past-editions .text-title,
+  footer .text-title {
+    height: 3rem;
+  }
+
+  #intro {
+    padding: 6rem 6rem 4rem 6rem;
+  }
+
+  #past-editions .text-title {
+    padding: 6rem 0 0 6rem;
+  }
+
+  #intro p {
+    width: 85%;
+  }
+
+  .steps {
+    gap: 2rem;
+  }
+
+  .steps img {
+    width: 13rem;
+  }
+
+  .steps img:nth-child(1) {
+    padding-bottom: 13rem;
+  }
+
+  .steps img:nth-child(2) {
+    padding-bottom: 8rem;
+  }
+
+  .the-projects {
+    padding: 4rem 4rem 0 4rem;
+  }
+
+  .project>img {
+    width: 32rem;
+  }
+
+  .project-info>img {
+    text-align: center;
+    height: 2.5rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+
+  #past-editions .testemonials-container {
+    margin: 0 6rem;
+  }
+
+  .testemonial-card {
+    flex-direction: column;
+  }
+
+  .testemonial-card p {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 6rem;
+  }
+}
+
+/* ----------------------- width: 830 ------------------------ */
+
+@media only screen and (max-width: 830px) {
+
+  #intro .text-title,
+  #past-editions .text-title,
+  footer .text-title {
+    height: 2.5rem;
+  }
+
+  #intro {
+    padding: 4rem 4rem 2rem 4rem;
+  }
+
+  #past-editions .text-title {
+    padding: 4rem 4rem 0 4rem;
+  }
+
+  #intro p {
+    width: 100%;
+  }
+
+  .steps {
+    gap: 1.5rem;
+  }
+
+  .steps img {
+    width: 11rem;
+  }
+
+  .steps img:nth-child(1) {
+    padding-bottom: 11rem;
+  }
+
+  .steps img:nth-child(2) {
+    padding-bottom: 8rem;
+  }
+
+  .the-projects {
+    padding: 4rem 4rem;
+  }
+
+  .project>img {
+    width: 26rem;
+  }
+
+  .project-info>img {
+    height: 2.5rem;
+  }
+
+  #past-editions .testemonials-container {
+    margin: 0 4rem;
+  }
+
+  .arrow img,
+  .exit-btn img {
+    width: 3rem;
+  }
+
+  footer {
+    padding: 4rem;
+  }
+}
+
+/* ----------------------- width: 560 ------------------------ */
+
+@media only screen and (max-width: 560px) {
+
+  #intro .text-title,
+  #past-editions .text-title,
+  footer .text-title {
+    height: 2.25rem;
+  }
+
+  #intro {
+    padding: 3rem 3rem 1rem 3rem;
+  }
+
+  #intro p {
+    font-size: 1.2rem;
+  }
+
+  .steps img {
+    width: 9rem;
+  }
+
+  #past-editions .text-title {
+    padding: 3rem 0 0 3rem;
+  }
+
+  .the-projects {
+    padding: 3rem 3rem;
+  }
+
+  .project>img {
+    width: 26rem;
+  }
+
+  .project-info>img {
+    height: 2.5rem;
+  }
+
+  .project-details-inner {
+    padding: 1.5rem 3rem !important;
+  }
+
+  .details-info {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-project,
+  .other-info {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .details-info h4 {
+    font-size: 1.3rem;
+  }
+
+  .details-info p {
+    font-size: 1.1rem;
+  }
+
+  .details-info ul,
+  .details-info li {
+    font-size: 1.1rem;
+  }
+
+  #past-editions .testemonials-container {
+    margin: 0 1rem;
+  }
+
+  .arrow img,
+  .exit-btn img {
+    width: 2.5rem;
+  }
+
+  footer {
+    padding: 3rem;
+  }
+}
+
+/* ----------------------- width: 420 ------------------------ */
+
+@media only screen and (max-width: 420px) {
+
+  #summerInternship-logo {
+    width: 18rem;
+  }
+
+  #redlight-logo {
+    width: 8rem;
+  }
+
+  #hero h2 {
+    font-size: 1.2rem;
+  }
+
+  #intro .text-title,
+  #past-editions .text-title,
+  footer .text-title {
+    height: 1.5rem;
+  }
+
+  #intro {
+    padding: 2rem;
+  }
+
+  .how-it-goes h2,
+  #past-editions h2 {
+    font-size: 2rem;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .steps img {
+    width: 11rem;
+  }
+
+  .steps img:nth-child(1) {
+    padding-bottom: 0;
+  }
+
+  .steps img:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  #past-editions .text-title {
+    padding: 2rem 0 0 2rem;
+  }
+
+  .the-projects {
+    padding: 2rem;
+  }
+
+  .project>img {
+    width: 22rem;
+  }
+
+  .project-info>img {
+    height: 2.5rem;
+  }
+
+  #past-editions .testemonials-container {
+    margin: 0 0.75rem;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+}

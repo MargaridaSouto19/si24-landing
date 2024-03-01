@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <title>RedLight - Summer Internship 2024</title>
+</head>
+
+<body>
+  <main>
+    <section id="hero">
+      <button class="apply">APPLY</button>
+      <div class="logos">
+        <img id="summerInternship-logo" src="images/LogoSI24.png" alt="summerInternship-logo">
+        <a href="https://redlight.dev/" target="_blank" id="redlight-logo">
+          <img id="redlight-logo" src="images/RedLight-logo.svg" alt="redlight-logo">
+        </a>
+      </div>
+      <h2>FROM JULY TO AUGUST 2024</h2>
+    </section>
+
+    <section id="intro">
+      <img class="text-title" src="images/titles/Hello-title.svg" alt="hello-text">
+      <p>We are thrilled to announce our Summer Internship Program where you will be placed within a team of talented
+        designers
+        and developers, working together on an actual project and experiencing the various stages of product
+        development. <br><br> You will be surrounded by a great team who will always help you, participate in lots of
+        workshops and have a ton
+        of fun activities (Did anyone say party?).</p>
+
+      <div class="find-out btn">
+        <a href="https://redlight.dev" target="_blank" class="link">FIND OUT MORE</a>
+        <img src="images/underline-yellow.svg" alt="underline">
+      </div>
+
+      <div class="how-it-goes">
+        <h2>HOW IT GOES</h2>
+        <div class="steps">
+          <img src="images/Application.svg" alt="steps-to-enter">
+          <img src="images/Interview.svg" alt="steps-to-enter">
+          <img src="images/TechnicalChallenge.svg" alt="steps-to-enter">
+        </div>
+      </div>
+
+    </section>
+
+    <section id="past-editions">
+      <img class="text-title" src="images/titles/PastEditions-title.svg" alt="past-editions-text">
+
+      <div class="gallery">
+        <div><img src="images/photos-editions/past-editions-image1.png"
+                    alt="RedLight team in front of a river after canouing"></div>
+        <div><img src="images/photos-editions/past-editions-image2.png"
+                    alt="RedLight interns in a room discussing their work displayed on the walls"></div>
+        <div><img src="images/photos-editions/past-editions-image3.png"
+                    alt="RedLight team outdoors having a shot and enjoying each others company"></div>
+        <div><img src="images/photos-editions/past-editions-image4.png"
+                    alt="RedLight interns looking at a wall with informassion while discussing it"></div>
+        <div><img src="images/photos-editions/past-editions-image5.png"
+                    alt="RedLight team in canoues in the river smiling"></div>
+        <div><img src="images/photos-editions/past-editions-image6.png" alt="Barbacue in a party"></div>
+        <div><img src="images/photos-editions/past-editions-image7.png"
+                    alt="RedLight interns presenting their work to the rest of the company"></div>
+        <div><img src="images/photos-editions/past-editions-image8.png" alt="RedLight team in canoues in the river">
+        </div>
+        <div><img src="images/photos-editions/past-editions-image9.png"
+                    alt="RedLight interns presenting their work to the rest of the company"></div>
+      </div>
+
+      <div class="the-projects">
+        <h2>THE PROJECTS</h2>
+
+        <div class="projects-container">
+          <div class="project">
+            <img src="images/boop.png" alt="project-boop-mockup">
+            <div class="project-info">
+              <img src="images/boop-logo.svg" alt="project-boop-logo">
+              <div class="see-more btn">
+                <button class="see-more-btn" onclick="handleDialog('boop')">
+                  SEE MORE
+                </button>
+                <img src="images/underline-purple.svg" alt="underline">
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="images/hungryMates.png" alt="project-hungryMates-mockup">
+            <div class="project-info">
+              <img src="images/hungryMates-logo.svg" alt="project-hungrymates-logo">
+              <div class="see-more btn">
+                <button class="see-more-btn" onclick="handleDialog('hungryMates')">
+                  SEE MORE
+                </button>
+                <img src=" images/underline-purple.svg" alt="underline">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <div class="project-details-inner">
+            <button class="exit-btn" onclick="handleCloseDialog()">
+              <img class="exit" src="images/exit.svg" alt="exit button">
+            </button>
+            <img id="project-logo" src="" alt="project logo">
+            <div class="details-info">
+              <div class="about-project">
+                <h4>ABOUT THE PROJECT</h4>
+                <p id="project-about"></P>
+              </div>
+              <div class="other-info">
+                <h4>YEAR</h4>
+                <p id="project-year">2022</p>
+                <h4>TECHNOLOGIES</h4>
+                <ul id="project-technologies"></ul>
+                <h4>PLATFORMS</h4>
+                <ul id="project-platforms"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="testemonials-container">
+        <div class="swiper-button-prev-unique arrow">
+          <img src="images/Left.svg" alt="left-arrow">
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testemonial-card">
+                <img src="./images/people/Érica Soares.png" alt="user photo">
+                <div class="testemonial-card-info">
+                  <h3>ÉRICA SOARES</h3>
+                  <p>"The redlight summer internship was a great way to spend my summer. I learnt a lot, it was great
+                    fun and I made new friends! You won't regret it!"</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testemonial-card">
+                <img src="./images/people/Eduardo Falvo.png" alt="user photo">
+                <div class="testemonial-card-info">
+                  <h3>EDUARDO FALVO</h3>
+                  <p>"The Redlight Summer Internship was a remarkable and unique experience for me. Since the first
+                    day
+                    of the internship, the entire Redlight team welcomed us with open arms, full of joy and kindness,
+                    and provided us with valuable knowledge and skills throughout the entire time. I left this summer
+                    internship with enhanced skills, new knowledge, and a deep sense of appreciation for the wonderful
+                    people I had the pleasure of meeting during my time there. I highly recommend this experience."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testemonial-card">
+                <img src="./images/people/Pedro Ferreira.png" alt="user photo">
+                <div class="testemonial-card-info">
+                  <h3>PEDRO FERREIRA</h3>
+                  <p>"Working at Redlight was amazing! I learned about new technologies, worked with an awesome team,
+                    met experienced people, and created a project that I am proud of. Everyone was kind and helpful,
+                    and
+                    I really enjoyed going to work every day.
+                    It was an incredibly rewarding experience that helped me grow a lot, both personally and
+                    professionally."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testemonial-card">
+                <img src="./images/people/João Krichanã.png" alt="user photo">
+                <div class="testemonial-card-info">
+                  <h3>JOÃO KRICHANÃ</h3>
+                  <p>"The Redlight Summer Internship was an incredible and life-changing experience. In just two
+                    months, I learnt a lot and grew not only as a professional, but also personally."</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testemonial-card">
+                <img src="./images/people/Francisca Laureano.png" alt="user photo">
+                <div class="testemonial-card-info">
+                  <h3>FRANCISCA LAUREANO</h3>
+                  <p>"My summer internship at RedLight Dev was incredible. The work atmosphere was excellent, and I
+                    was
+                    made to feel like a member of the team right away. This internship also helped me improve as a
+                    designer and learn a great deal about working at an enterprise."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next-unique arrow">
+          <img src="images/Right.svg" alt="right-arrow">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <img class="text-title" src="images/titles/joinUs-title.svg" alt="join-us-text">
+    <button class="apply-now">APPLY NOW</button>
+  </footer>
+
+  <div class="background-wrapper">
+    <img src="images/background.png" alt="background" id="symbols">
+    <img src="images/texture.png" alt="background-texture" id="texture">
+  </div>
+
+  <script src="js/carousel.js"></script>
+  <script src="js/dialog.js"></script>
+</body>
+
+</html>
