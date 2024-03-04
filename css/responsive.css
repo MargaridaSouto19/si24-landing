@@ -110,6 +110,16 @@
 
 @media only screen and (max-width: 830px) {
 
+  .apply {
+    position: fixed;
+    top: unset;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    height: fit-content;
+    width: 85%;
+  }
+
   #intro .text-title,
   #past-editions .text-title,
   footer .text-title {
@@ -142,6 +152,10 @@
 
   .steps img:nth-child(2) {
     padding-bottom: 3.5rem;
+  }
+
+  .gallery {
+    margin-left: -2rem;
   }
 
   .the-projects {
@@ -220,6 +234,15 @@
   .how-it-goes h2,
   #past-editions h2 {
     font-size: 2rem;
+  }
+
+  .gallery {
+    padding-bottom: 2rem;
+  }
+
+  .gallery img {
+    height: 15rem;
+    margin: 0.25rem;
   }
 
   .the-projects {
