@@ -61,11 +61,11 @@
   }
 
   .steps img:nth-child(1) {
-    padding-bottom: 13rem;
+    padding-bottom: 11rem;
   }
 
   .steps img:nth-child(2) {
-    padding-bottom: 8rem;
+    padding-bottom: 5.5rem;
   }
 
   .the-projects {
@@ -94,6 +94,7 @@
 
   .testemonial-card {
     flex-direction: column;
+    gap: 3rem;
   }
 
   .testemonial-card p {
@@ -132,19 +133,19 @@
   }
 
   .steps img {
-    width: 11rem;
+    width: 10rem;
   }
 
   .steps img:nth-child(1) {
-    padding-bottom: 11rem;
+    padding-bottom: 7rem;
   }
 
   .steps img:nth-child(2) {
-    padding-bottom: 8rem;
+    padding-bottom: 3.5rem;
   }
 
   .the-projects {
-    padding: 4rem 4rem;
+    padding: 1rem 4rem
   }
 
   .project>img {
@@ -172,11 +173,18 @@
 /* ----------------------- width: 560 ------------------------ */
 
 @media only screen and (max-width: 560px) {
+  #summerInternship-logo {
+    width: 20rem;
+  }
+
+  #redlight-logo {
+    width: 10rem;
+  }
 
   #intro .text-title,
   #past-editions .text-title,
   footer .text-title {
-    height: 2.25rem;
+    height: 2rem;
   }
 
   #intro {
@@ -187,12 +195,31 @@
     font-size: 1.2rem;
   }
 
+  .steps {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
   .steps img {
-    width: 9rem;
+    width: 11rem;
+  }
+
+  .steps img:nth-child(1) {
+    padding-bottom: 0;
+  }
+
+  .steps img:nth-child(2) {
+    padding-bottom: 0;
   }
 
   #past-editions .text-title {
     padding: 3rem 0 0 3rem;
+  }
+
+  .how-it-goes h2,
+  #past-editions h2 {
+    font-size: 2rem;
   }
 
   .the-projects {
@@ -254,7 +281,7 @@
 @media only screen and (max-width: 420px) {
 
   #summerInternship-logo {
-    width: 18rem;
+    width: 16rem;
   }
 
   #redlight-logo {
@@ -262,40 +289,26 @@
   }
 
   #hero h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   #intro .text-title,
   #past-editions .text-title,
   footer .text-title {
-    height: 1.5rem;
+    height: 1.7rem;
   }
 
   #intro {
-    padding: 2rem;
+    padding: 4rem 2rem;
   }
 
   .how-it-goes h2,
   #past-editions h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  .steps {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  .steps img {
-    width: 11rem;
-  }
-
-  .steps img:nth-child(1) {
-    padding-bottom: 0;
-  }
-
-  .steps img:nth-child(2) {
-    padding-bottom: 0;
+  #past-editions {
+    padding: 3rem 0;
   }
 
   #past-editions .text-title {
