@@ -184,6 +184,16 @@
   }
 }
 
+/* ----------------------- width: 630 ------------------------ */
+
+@media only screen and (max-width: 630px) {
+  #intro .text-title,
+  #past-editions .text-title,
+  footer .text-title {
+    height: 1.9rem;
+  }
+}
+
 /* ----------------------- width: 560 ------------------------ */
 
 @media only screen and (max-width: 560px) {
