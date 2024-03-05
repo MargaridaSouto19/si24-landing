@@ -8,10 +8,10 @@ const boopProject = {
 
 const hungryMatesProject = {
   logo: 'images/hungryMates-logo.svg',
-  about: 'Lorem Ipsum dolor sit amet',
+  about: 'HungryMates is a Web APP designed to help groups of people decide and plan their meals based on their preferences and availability. It was developed by 2 designers and 4 developers.',
   year: '2023',
-  technologies: ['Tecnologia1', 'Tecnologia2', 'Tecnologia3'],
-  platforms: ['Plataforma1', 'Plataforma2']
+  technologies: ['Figma', 'Docker', 'Ruby on Rails', 'Postgres', 'React + TypeScript'],
+  platforms: ['Web', 'Mobile']
 }
 
 const dialog = document.querySelector('.project-details');

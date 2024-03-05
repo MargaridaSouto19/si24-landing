@@ -180,13 +180,18 @@
   }
 
   footer {
-    padding: 4rem;
+    padding: 4rem 4em 8rem 4rem;
+  }
+
+  footer button {
+    display: none;
   }
 }
 
 /* ----------------------- width: 630 ------------------------ */
 
 @media only screen and (max-width: 630px) {
+
   #intro .text-title,
   #past-editions .text-title,
   footer .text-title {
@@ -223,6 +228,7 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    padding-bottom: 4rem;
   }
 
   .steps img {
