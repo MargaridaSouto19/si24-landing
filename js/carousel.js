@@ -10,7 +10,8 @@ var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: '.swiper-button-next-unique',
     prevEl: '.swiper-button-prev-unique'
-  }
+  },
+  loop: true
 });
 
 $(document).ready(function () {
